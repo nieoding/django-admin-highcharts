@@ -16,7 +16,7 @@ Quick start
         ...
         'admin_highcharts',
     )
-2. add highchart to admin your app model,for example:
+2. add highchart to admin your app model,for example::
 
 	your model defined(models.py)
 	class MyStats(models.Model):
