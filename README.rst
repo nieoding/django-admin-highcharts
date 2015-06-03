@@ -39,10 +39,11 @@ Quick start
     chart_type:
         default -> line
         options: line,column,area,areaspline,spline,
-	for example:
-	admin.site.register(MyStats,HighchartsModelAdmin,list_display=('pv','uv','stats_date'),chart_serial_names=('uv',))
-	or
-	@admin.register(MyStats)
-	class MyStatsAdmin(HighchartsModelAdmin):
-		list_display=('pv','uv','stats_date')
-		chart_serial_names=('uv',)
+    for example:
+    admin.site.register(MyStats,HighchartsModelAdmin,list_display=('pv','uv','stats_date'),chart_category_name='stats_date',chart_serial_names=('uv',))
+    or
+    @admin.register(MyStats)
+    class MyStatsAdmin(HighchartsModelAdmin):
+	list_display=('pv','uv','stats_date')
+	chart_category_name='stats_date'
+	chart_serial_names=('uv',)
