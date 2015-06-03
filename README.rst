@@ -30,3 +30,12 @@ Quick start
 	from admin_highcharts.admin import HighchartsModelAdmin
 	admin.site.register(MyStats,HighchartsModelAdmin,list_display=('stats_date','pv','uv'))
 
+3. advance method in HighchartsModelAdmin::
+
+    chart_category_name:
+        default -> the first elem in list_display,you can set manual
+    chart_serial_names:
+        default -> list_display exclude chart_category_name,you can set manual
+    chart_type:
+        default -> line
+        options: line,column,area,areaspline,spline,
