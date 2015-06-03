@@ -1,0 +1,7 @@
+{% extends "admin/change_list.html" %}
+{% load highcharts_tag %}
+{% block object-tools %}
+	{{ block.super }}
+	  {% highcharts_for_result cl %}
+	  <p></p>
+{% endblock %}
